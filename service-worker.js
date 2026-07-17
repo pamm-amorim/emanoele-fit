@@ -1,4 +1,4 @@
-const CACHE = "emanoele-fit-shell-v3";
+const CACHE = "emanoele-fit-shell-v4";
 const APP_ROOT = new URL("./", self.registration.scope);
 const OFFLINE_PAGE = new URL("index.html", APP_ROOT).href;
 const ASSETS = [
@@ -30,6 +30,19 @@ self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
+
+  if (url.pathname.endsWith("/config.js")) {
+    event.respondWith(
+      fetch(event.request).then(async (response) => {
+        if (response.ok) {
+          const cache = await caches.open(CACHE);
+          await cache.put(event.request, response.clone());
+        }
+        return response;
+      }).catch(() => caches.match(event.request))
+    );
+    return;
+  }
 
   event.respondWith(
     caches.match(event.request).then(async (cached) => {
