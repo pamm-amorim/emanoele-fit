@@ -148,6 +148,28 @@ export const WORKOUTS = {
         ],
         cues: "Mantenha os braços parados; somente os antebraços se movem.",
         mistakes: "Arredondar a coluna, balançar os braços ou deixar os ombros subirem."
+      },
+      {
+        id: "a-dead-bug",
+        block: 3,
+        name: "Dead bug",
+        muscles: "Abdômen e controle lombopélvico",
+        equipment: "Colchonete",
+        bandType: "nenhum",
+        sets: 2,
+        target: "8 por lado",
+        defaultReps: 8,
+        perSide: true,
+        posture: true,
+        videoId: "uQfzuKBMJeE",
+        steps: [
+          "Deite de costas com quadris e joelhos a 90 graus e braços apontando para cima.",
+          "Encoste suavemente a lombar no colchonete e expire.",
+          "Estenda ao mesmo tempo uma perna e o braço oposto, sem perder o contato da lombar.",
+          "Volte e alterne os lados, mantendo o movimento lento."
+        ],
+        cues: "Use uma amplitude menor se a lombar começar a sair do colchonete.",
+        mistakes: "Arquear a lombar, acelerar o movimento ou tensionar excessivamente o pescoço."
       }
     ]
   },
@@ -290,7 +312,57 @@ export const WORKOUTS = {
         ],
         cues: "Mantenha punhos neutros e cotovelos estáveis.",
         mistakes: "Balançar o tronco, encolher os ombros ou projetar os cotovelos para a frente."
+      },
+      {
+        id: "b-reverse-crunch",
+        block: 3,
+        name: "Abdominal reverso",
+        muscles: "Abdômen",
+        equipment: "Colchonete",
+        bandType: "nenhum",
+        sets: 2,
+        target: "10–15",
+        defaultReps: 10,
+        perSide: false,
+        posture: true,
+        videoUrl: "https://www.acefitness.org/resources/everyone/exercise-library/body-part/abs/",
+        steps: [
+          "Deite de costas, mantenha os braços ao lado do corpo e eleve as pernas com joelhos dobrados.",
+          "Expire e aproxime os joelhos do peito, tirando suavemente o quadril do colchonete.",
+          "Faça uma pausa curta sem apoiar o peso no pescoço ou nos ombros.",
+          "Desça o quadril devagar e pare antes de perder o controle da lombar."
+        ],
+        cues: "Pense em enrolar a pelve; o movimento é curto e controlado.",
+        mistakes: "Usar impulso das pernas, balançar o corpo ou puxar excessivamente os joelhos."
       }
     ]
   }
 };
+
+const EXERCISE_ORDER = {
+  A: [
+    "a-squat-miniband",
+    "a-knee-pushup",
+    "a-calf-raise",
+    "a-shoulder-press",
+    "a-reverse-lunge",
+    "a-triceps-kickback",
+    "a-dead-bug"
+  ],
+  B: [
+    "b-rdl-band",
+    "b-bent-row",
+    "b-glute-bridge",
+    "b-seated-row",
+    "b-hip-abduction",
+    "b-biceps-curl",
+    "b-reverse-crunch"
+  ]
+};
+
+Object.entries(EXERCISE_ORDER).forEach(([code, order]) => {
+  WORKOUTS[code].exercises.sort((a, b) => order.indexOf(a.id) - order.indexOf(b.id));
+  WORKOUTS[code].exercises.forEach((exercise, index) => {
+    exercise.block = Math.min(3, Math.floor(index / 2) + 1);
+  });
+});

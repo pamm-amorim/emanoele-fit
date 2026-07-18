@@ -162,7 +162,7 @@ function renderHome() {
       </div>
     </section>
 
-    <div class="section-header"><div><h2>Plano rápido</h2><p>Seis exercícios por sessão.</p></div></div>
+    <div class="section-header"><div><h2>Plano rápido</h2><p>Sete exercícios por sessão.</p></div></div>
     ${planPreview(workout)}
   `;
 
