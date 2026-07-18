@@ -1,4 +1,4 @@
-const CACHE = "emanoele-fit-shell-v4";
+const CACHE = "emanoele-fit-shell-v5";
 const APP_ROOT = new URL("./", self.registration.scope);
 const OFFLINE_PAGE = new URL("index.html", APP_ROOT).href;
 const ASSETS = [

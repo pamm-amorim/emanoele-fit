@@ -154,7 +154,7 @@ function renderHome() {
       <div><h2>Como funciona</h2><p>Alterne A e B em cada dia de treino.</p></div>
     </div>
     <section class="card">
-      <p style="margin-top:0;line-height:1.55">Treinando 3 vezes, a sequência pode ser <strong>A–B–A</strong> e, na semana seguinte, <strong>B–A–B</strong>. Com 4 vezes, fica <strong>A–B–A–B</strong>. Assim, os grandes grupos musculares recebem estímulos frequentes sem depender de dias fixos.</p>
+      <p style="margin-top:0;line-height:1.55">Treinando 3 vezes, a sequência pode ser <strong>A–B–A</strong> e, na semana seguinte, <strong>B–A–B</strong>. Com 4 vezes, fica <strong>A–B–A–B</strong>. Os treinos usam grupos musculares distintos para facilitar a recuperação quando feitos em dias seguidos.</p>
       <div class="plan-meta">
         <span class="badge">2 séries por exercício</span>
         <span class="badge">3 blocos</span>
@@ -178,7 +178,7 @@ function renderHome() {
 
 function renderPlans() {
   view.innerHTML = `
-    <div class="section-header"><div><h2>Treinos A e B</h2><p>Corpo inteiro, com ênfases complementares.</p></div></div>
+    <div class="section-header"><div><h2>Treinos A e B</h2><p>Grupos musculares distintos e complementares.</p></div></div>
     <div class="plans-grid">
       ${Object.values(WORKOUTS).map((workout) => planPreview(workout, true)).join("")}
     </div>

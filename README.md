@@ -85,4 +85,4 @@ O programa é uma sugestão geral para uma adulta sem dor ou restrição informa
 
 ## Ajuste mais recente
 
-A flexão inclinada foi substituída por rosca direta com elástico longo, e o wall slide foi substituído por coice de tríceps com elástico longo. O treino mantém apenas uma variação de flexão e não exige ponto fixo para ancoragem dos elásticos.
+Os treinos foram reorganizados por grupos musculares para permitir a alternância em dias seguidos. O treino A trabalha ombros, peito, tríceps, quadríceps e panturrilhas; o treino B trabalha costas, bíceps, glúteos e posteriores de coxa. A estrutura permanece com seis exercícios, três blocos e duas séries por exercício, sem exigir ponto fixo para ancoragem dos elásticos.
