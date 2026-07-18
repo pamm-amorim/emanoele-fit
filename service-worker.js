@@ -1,6 +1,7 @@
-const CACHE = "emanoele-fit-shell-v6";
+const CACHE = "emanoele-fit-shell-v7";
 const APP_ROOT = new URL("./", self.registration.scope);
 const OFFLINE_PAGE = new URL("index.html", APP_ROOT).href;
+const NETWORK_FIRST_ASSETS = ["/app.js", "/workouts.js", "/config.js"];
 const ASSETS = [
   "./",
   "./index.html",
@@ -31,7 +32,7 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;
 
-  if (url.pathname.endsWith("/config.js")) {
+  if (NETWORK_FIRST_ASSETS.some((path) => url.pathname.endsWith(path))) {
     event.respondWith(
       fetch(event.request).then(async (response) => {
         if (response.ok) {
