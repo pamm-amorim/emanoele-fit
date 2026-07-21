@@ -1,4 +1,4 @@
-const CACHE = "emanoele-fit-shell-v7";
+const CACHE = "emanoele-fit-shell-v8";
 const APP_ROOT = new URL("./", self.registration.scope);
 const OFFLINE_PAGE = new URL("index.html", APP_ROOT).href;
 const NETWORK_FIRST_ASSETS = ["/app.js", "/workouts.js", "/config.js"];

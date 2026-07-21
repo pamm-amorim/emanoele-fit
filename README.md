@@ -79,10 +79,12 @@ Edite `workouts.js`. Cada exercício possui:
 - `steps`, `cues` e `mistakes`;
 - `videoId` e, opcionalmente, `videoStart`; ou `videoUrl` para abrir uma demonstração externa.
 
+Nas próximas revisões, use vídeos do YouTube, preferencialmente Shorts. Pesquise pelo nome do exercício em inglês (por exemplo, `banded squat`) e escolha uma demonstração curta, clara e compatível com a execução descrita no app.
+
 ## Observação de saúde
 
 O programa é uma sugestão geral para uma adulta sem dor ou restrição informada. Técnica e progressão individual podem ser ajustadas por profissional de educação física. Dor aguda, tontura, falta de ar intensa ou mal-estar são sinais para interromper a sessão.
 
 ## Ajuste mais recente
 
-Os treinos foram reorganizados por grupos musculares para permitir a alternância em dias seguidos. O treino A trabalha ombros, peito, tríceps, quadríceps e panturrilhas; o treino B trabalha costas, bíceps, glúteos e posteriores de coxa. Exercícios de membros inferiores e superiores são intercalados, e cada treino termina com um exercício abdominal. A estrutura possui sete exercícios, três blocos e duas séries por exercício, sem exigir ponto fixo para ancoragem dos elásticos.
+Após o primeiro teste de cada treino, o aquecimento passou a ter quatro movimentos de 45 segundos, o afundo reverso deixou de usar apoio e a abdução de quadril passou a ser executada deitada. Todos os exercícios agora usam vídeos do YouTube selecionados para a execução proposta.

@@ -2,10 +2,9 @@ export const WARMUP = {
   duration: 180,
   items: [
     "Marcha no lugar — 45 s",
-    "Círculos de ombros — 30 s",
-    "Gato-vaca no colchonete — 30 s",
-    "Encaixe de quadril sem carga — 45 s",
-    "Agachamento curto sem elástico — 30 s"
+    "Círculos de ombros — 45 s",
+    "Gato-vaca no colchonete — 45 s",
+    "Agachamento curto sem elástico — 45 s"
   ]
 };
 
@@ -29,7 +28,7 @@ export const WORKOUTS = {
         defaultReps: 12,
         perSide: false,
         posture: true,
-        videoId: "emkI_9zB9LQ",
+        videoId: "Ga4ogr-ji_s",
         steps: [
           "Coloque a mini band logo acima dos joelhos e afaste os pés na largura dos quadris.",
           "Desça dobrando joelhos e quadris, mantendo o peito aberto e os calcanhares apoiados.",
@@ -51,7 +50,7 @@ export const WORKOUTS = {
         defaultReps: 15,
         perSide: false,
         posture: true,
-        videoUrl: "https://www.acefitness.org/resources/everyone/exercise-library/body-part/legs-calves-and-shins/",
+        videoId: "fZYTVO9-Ggk",
         steps: [
           "Fique em pé com os pés paralelos e use a parede ou uma cadeira apenas para equilíbrio.",
           "Distribua o peso entre a base do dedão, a base do dedo mínimo e o calcanhar.",
@@ -73,7 +72,7 @@ export const WORKOUTS = {
         defaultReps: 6,
         perSide: false,
         posture: false,
-        videoId: "rsbq8DwZEGg",
+        videoId: "yrehRkNFB_s",
         steps: [
           "Apoie mãos e joelhos, com as mãos um pouco além da largura dos ombros.",
           "Leve o corpo à frente para formar uma linha dos joelhos até a cabeça.",
@@ -95,7 +94,7 @@ export const WORKOUTS = {
         defaultReps: 10,
         perSide: false,
         posture: true,
-        videoId: "oZ4gQrJonb8",
+        videoId: "1-VfJqjYquQ",
         steps: [
           "Pise no elástico e segure as laterais na altura dos ombros.",
           "Contraia abdômen e glúteos para evitar arquear a lombar.",
@@ -108,23 +107,23 @@ export const WORKOUTS = {
       {
         id: "a-reverse-lunge",
         block: 3,
-        name: "Afundo reverso com apoio",
+        name: "Afundo reverso",
         muscles: "Quadríceps e estabilizadores do quadril",
-        equipment: "Parede ou cadeira para apoio opcional",
+        equipment: "Sem equipamento",
         bandType: "nenhum",
         sets: 2,
         target: "8–10 por lado",
         defaultReps: 8,
         perSide: true,
         posture: true,
-        videoId: "UcU2i5G790s",
+        videoId: "V6GRqXghePs",
         steps: [
-          "Fique em pé ao lado de uma parede ou cadeira e use uma mão apenas para equilíbrio.",
+          "Fique em pé com os pés na largura dos quadris e o abdômen levemente firme.",
           "Dê um passo para trás e apoie a ponta do pé.",
           "Desça os dois joelhos, mantendo o tronco alto e o joelho da frente alinhado ao pé.",
           "Pressione o pé da frente para retornar e complete as repetições antes de trocar o lado."
         ],
-        cues: "Mantenha a maior parte do peso na perna da frente e use o apoio somente para equilíbrio.",
+        cues: "Mantenha a maior parte do peso na perna da frente e fixe o olhar à frente para equilibrar.",
         mistakes: "Joelho da frente entrando, passo curto demais ou impulso excessivo com a perna de trás."
       },
       {
@@ -139,7 +138,7 @@ export const WORKOUTS = {
         defaultReps: 12,
         perSide: false,
         posture: true,
-        videoUrl: "https://inspirefulwomen.com/exercises/womens-resistance-band-triceps-kickback-exercise-foot-anchored-proper-form/",
+        videoId: "v_VkdTfEPeo",
         steps: [
           "Pise no centro do elástico e segure uma lateral em cada mão.",
           "Incline o tronco a partir do quadril, mantendo coluna neutra e abdômen firme.",
@@ -161,7 +160,7 @@ export const WORKOUTS = {
         defaultReps: 8,
         perSide: true,
         posture: true,
-        videoId: "uQfzuKBMJeE",
+        videoId: "5c-vucY3beU",
         steps: [
           "Deite de costas com quadris e joelhos a 90 graus e braços apontando para cima.",
           "Encoste suavemente a lombar no colchonete e expire.",
@@ -192,8 +191,7 @@ export const WORKOUTS = {
         defaultReps: 12,
         perSide: false,
         posture: true,
-        videoId: "OGXUuxv627g",
-        videoStart: 480,
+        videoId: "jaRAR9l1e2o",
         steps: [
           "Pise no centro do elástico e segure as laterais com os braços estendidos.",
           "Mantenha os joelhos destravados e leve o quadril para trás.",
@@ -215,7 +213,7 @@ export const WORKOUTS = {
         defaultReps: 15,
         perSide: false,
         posture: true,
-        videoId: "le8ZN02BQCE",
+        videoId: "p5N_fok9YCM",
         steps: [
           "Coloque a mini band acima dos joelhos e deite com os pés apoiados no chão.",
           "Mantenha os joelhos levemente pressionados para fora.",
@@ -228,24 +226,24 @@ export const WORKOUTS = {
       {
         id: "b-hip-abduction",
         block: 2,
-        name: "Abdução de quadril em pé",
+        name: "Abdução de quadril deitada",
         muscles: "Glúteo médio e estabilizadores do quadril",
-        equipment: "Elástico curto (mini band) + cadeira",
+        equipment: "Elástico curto (mini band) + colchonete",
         bandType: "curto",
         sets: 2,
         target: "10–15 por lado",
         defaultReps: 12,
         perSide: true,
         posture: true,
-        videoUrl: "https://www.acefitness.org/getfit/rubrbndwkout.pdf",
+        videoId: "6rWe6tLc_KM",
         steps: [
-          "Coloque a mini band ao redor dos tornozelos e apoie as mãos no encosto de uma cadeira.",
-          "Deixe o peso em uma perna, mantendo joelho e tronco estáveis.",
-          "Leve a outra perna para o lado sem girar a ponta do pé para fora.",
-          "Retorne devagar sem perder toda a tensão e complete antes de trocar o lado."
+          "Coloque a mini band ao redor dos tornozelos e deite de lado com o corpo alinhado.",
+          "Apoie a cabeça no braço e deixe a perna de baixo levemente dobrada para dar estabilidade.",
+          "Mantenha a perna de cima estendida e eleve-a sem girar a ponta do pé para cima.",
+          "Desça devagar sem perder toda a tensão e complete antes de trocar o lado."
         ],
-        cues: "Faça uma amplitude pequena e mantenha quadris e ombros apontados para a frente.",
-        mistakes: "Inclinar o tronco, girar o pé para fora ou usar impulso."
+        cues: "Mantenha o quadril empilhado e faça uma amplitude pequena e controlada.",
+        mistakes: "Rolar o quadril para trás, girar o pé para cima ou usar impulso."
       },
       {
         id: "b-bent-row",
@@ -259,7 +257,7 @@ export const WORKOUTS = {
         defaultReps: 12,
         perSide: false,
         posture: true,
-        videoId: "kjc7U5eMaB0",
+        videoId: "WyyMiU6Y6YM",
         steps: [
           "Pise no centro do elástico com os dois pés e segure as laterais.",
           "Incline o tronco a partir do quadril, com joelhos levemente flexionados.",
@@ -281,7 +279,7 @@ export const WORKOUTS = {
         defaultReps: 12,
         perSide: false,
         posture: true,
-        videoId: "j9KCjIBCG8k",
+        videoId: "bBpK36TAQww",
         steps: [
           "Sente-se com pernas estendidas ou levemente flexionadas e passe o elástico pelos pés.",
           "Segure as laterais com o peito aberto e a coluna alta.",
@@ -303,7 +301,7 @@ export const WORKOUTS = {
         defaultReps: 12,
         perSide: false,
         posture: true,
-        videoUrl: "https://inspirefulwomen.com/exercises/womens-resistance-band-biceps-curl-arm-exercise-proper-form/",
+        videoId: "20xtfGZ37nw",
         steps: [
           "Pise no centro do elástico e segure uma lateral em cada mão.",
           "Fique alta, com abdômen firme, ombros para baixo e cotovelos junto ao tronco.",
@@ -325,7 +323,7 @@ export const WORKOUTS = {
         defaultReps: 10,
         perSide: false,
         posture: true,
-        videoUrl: "https://www.acefitness.org/resources/everyone/exercise-library/body-part/abs/",
+        videoId: "CteJ7rs2n-8",
         steps: [
           "Deite de costas, mantenha os braços ao lado do corpo e eleve as pernas com joelhos dobrados.",
           "Expire e aproxime os joelhos do peito, tirando suavemente o quadril do colchonete.",
