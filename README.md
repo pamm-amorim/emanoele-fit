@@ -87,4 +87,4 @@ O programa é uma sugestão geral para uma adulta sem dor ou restrição informa
 
 ## Ajuste mais recente
 
-Após o primeiro teste de cada treino, o aquecimento passou a ter quatro movimentos de 45 segundos, o afundo reverso deixou de usar apoio e a abdução de quadril passou a ser executada deitada. Todos os exercícios agora usam vídeos do YouTube selecionados para a execução proposta.
+Após a fase inicial com duas séries, todos os exercícios passaram a ter três séries. Treinos em andamento da versão anterior recebem automaticamente a terceira série sem perder os registros já feitos. O aquecimento mantém quatro movimentos de 45 segundos, e todos os exercícios usam vídeos do YouTube selecionados para a execução proposta.

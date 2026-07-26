@@ -33,6 +33,7 @@ async function init() {
   await initDataLayer();
   state.active = loadJson(ACTIVE_KEY, null);
   if (state.active) {
+    syncActiveWorkoutStructure();
     state.exerciseIndex = Math.max(0, Number(state.active.exerciseIndex || 0));
   }
   await refreshHistory();
@@ -156,7 +157,7 @@ function renderHome() {
     <section class="card">
       <p style="margin-top:0;line-height:1.55">Treinando 3 vezes, a sequência pode ser <strong>A–B–A</strong> e, na semana seguinte, <strong>B–A–B</strong>. Com 4 vezes, fica <strong>A–B–A–B</strong>. Os treinos usam grupos musculares distintos para facilitar a recuperação quando feitos em dias seguidos.</p>
       <div class="plan-meta">
-        <span class="badge">2 séries por exercício</span>
+        <span class="badge">3 séries por exercício</span>
         <span class="badge">3 blocos</span>
         <span class="badge posture">Foco em postura</span>
       </div>
@@ -722,6 +723,31 @@ function getNextWorkoutCode() {
 function countCompletedSets() {
   if (!state.active) return 0;
   return Object.values(state.active.sets).flat().filter((set) => set.completed).length;
+}
+
+function syncActiveWorkoutStructure() {
+  const workout = state.active && WORKOUTS[state.active.workoutCode];
+  if (!workout) return;
+
+  let changed = false;
+  state.active.sets ||= {};
+  workout.exercises.forEach((exercise) => {
+    if (!Array.isArray(state.active.sets[exercise.id])) {
+      state.active.sets[exercise.id] = [];
+      changed = true;
+    }
+    const sets = state.active.sets[exercise.id];
+    while (sets.length < exercise.sets) {
+      sets.push({
+        setNumber: sets.length + 1,
+        reps: exercise.defaultReps,
+        completed: false,
+        logId: null
+      });
+      changed = true;
+    }
+  });
+  if (changed) saveJson(ACTIVE_KEY, state.active);
 }
 
 function getActiveTotalReps() {
