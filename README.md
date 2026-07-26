@@ -87,4 +87,4 @@ O programa é uma sugestão geral para uma adulta sem dor ou restrição informa
 
 ## Ajuste mais recente
 
-Após a fase inicial com duas séries, todos os exercícios passaram a ter três séries. Treinos em andamento da versão anterior recebem automaticamente a terceira série sem perder os registros já feitos. O aquecimento mantém quatro movimentos de 45 segundos, e todos os exercícios usam vídeos do YouTube selecionados para a execução proposta.
+Por preferência da praticante, os exercícios voltaram a ter duas séries com faixas maiores de repetições. A progressão deve ocorrer primeiro dentro da faixa proposta, sempre com técnica estável; ao alcançar o limite superior com conforto, aumenta-se gradualmente a tensão do elástico. Terceiras séries já concluídas em um treino em andamento são preservadas, enquanto séries extras ainda vazias são removidas automaticamente.

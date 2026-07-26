@@ -157,7 +157,7 @@ function renderHome() {
     <section class="card">
       <p style="margin-top:0;line-height:1.55">Treinando 3 vezes, a sequência pode ser <strong>A–B–A</strong> e, na semana seguinte, <strong>B–A–B</strong>. Com 4 vezes, fica <strong>A–B–A–B</strong>. Os treinos usam grupos musculares distintos para facilitar a recuperação quando feitos em dias seguidos.</p>
       <div class="plan-meta">
-        <span class="badge">3 séries por exercício</span>
+        <span class="badge">2 séries por exercício</span>
         <span class="badge">3 blocos</span>
         <span class="badge posture">Foco em postura</span>
       </div>
@@ -276,7 +276,7 @@ function renderActiveWorkout() {
   const workout = WORKOUTS[state.active.workoutCode];
   const exercise = workout.exercises[state.exerciseIndex];
   const completedSets = countCompletedSets();
-  const totalSets = workout.exercises.reduce((sum, item) => sum + item.sets, 0);
+  const totalSets = Object.values(state.active.sets).flat().length;
   const progress = Math.round((completedSets / totalSets) * 100);
   const currentSets = state.active.sets[exercise.id];
 
@@ -506,7 +506,7 @@ function showRestTimer() {
 
 async function finishWorkout() {
   const workout = WORKOUTS[state.active.workoutCode];
-  const totalSets = workout.exercises.reduce((sum, item) => sum + item.sets, 0);
+  const totalSets = Object.values(state.active.sets).flat().length;
   const completedSets = countCompletedSets();
   if (completedSets < totalSets) {
     const confirmed = confirm(`Você concluiu ${completedSets} de ${totalSets} séries. Deseja registrar o treino mesmo assim?`);
@@ -737,6 +737,11 @@ function syncActiveWorkoutStructure() {
       changed = true;
     }
     const sets = state.active.sets[exercise.id];
+    const removableExtras = sets.slice(exercise.sets).every((set) => !set.completed && !set.logId);
+    if (sets.length > exercise.sets && removableExtras) {
+      sets.splice(exercise.sets);
+      changed = true;
+    }
     while (sets.length < exercise.sets) {
       sets.push({
         setNumber: sets.length + 1,
